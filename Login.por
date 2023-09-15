@@ -1,12 +1,12 @@
-// ó> Sistema de login: 
-// Construa um sistema de login e verifique se as credenciais est„o corretas. Se as credenciais estiverem erradas em 3 tentativas, 
-// bloqueie o usu·rio.
+// ‚Äî> Sistema de login: 
+// Construa um sistema de login e verifique se as credenciais est√£o corretas. Se as credenciais estiverem erradas em 3 tentativas, 
+// bloqueie o usu√°rio.
 programa {
   cadeia usuarioCerto = "Tio Samuca", senhaCerta = "VnW - o melhor"
   funcao inicio() {
     cadeia senhaDigitada, usuarioDigitado
-    escreva("FaÁa seu Login!")
-    escreva("\nDigite seu usu·rio: ")
+    escreva("Fa√ßa seu Login!")
+    escreva("\nDigite seu usu√°rio: ")
     leia(usuarioDigitado)
     escreva("Digite sua senha: ")
     leia(senhaDigitada)
@@ -19,15 +19,15 @@ programa {
       i += 1
       limpa()
       se(user == usuarioCerto e senha == senhaCerta){
-        escreva("Login concluÌdo com sucesso!!")
+        escreva("Login conclu√≠do com sucesso!!")
         retorne 1
       } senao {
-        escreva("Usu·rio ou senha digitados est„o incorretos.")
+        escreva("Usu√°rio ou senha digitados est√£o incorretos Tentativas restantes: ", 3-i)
         se(i == 3){
-          escreva("\nMuitas tentativas. Usu·rio bloqueado temporariamente.")
+          escreva("\nMuitas tentativas. Usu√°rio bloqueado temporariamente.")
         } senao{
-          escreva("\nFaÁa o login novamente.")
-          escreva("\nDigite seu usu·rio: ")
+          escreva("\nFa√ßa o login novamente.")
+          escreva("\nDigite seu usu√°rio: ")
           leia(user)
           escreva("Digite sua senha: ")
           leia(senha)
